@@ -6,6 +6,7 @@ import { AdminComponent } from './admin';
 import { LoginComponent } from './login';
 import { AuthGuard } from './_helpers';
 import { Role } from './_models';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const routes: Routes = [
     {
@@ -22,6 +23,10 @@ const routes: Routes = [
     {
         path: 'login',
         component: LoginComponent
+    },
+    {
+        path: 'user-profile',
+        component: UserProfileComponent
     },
 
     // otherwise redirect to home

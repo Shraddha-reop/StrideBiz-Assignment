@@ -1,13 +1,13 @@
-﻿<div class="card mt-4">
-    <h4 class="card-header">Home</h4>
-    <div class="card-body">
-        <p>You're logged in with Angular 9 & JWT!!</p>
-        <p>Your role is: <strong>{{user.role}}</strong>.</p>
-        <p>This page can be accessed by <u>all authenticated users</u>.</p>
-        <p class="mb-1">Current user from secure api end point:</p>
-        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
-        <ul *ngIf="userFromApi">
-            <li>{{userFromApi.firstName}} {{userFromApi.lastName}}</li>
-        </ul>
+﻿<div class="container">
+  <h1 style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 40px;">Dashboard</h1>
+    <div class="row">
+      <div class="col-sm">
+        <div id="barChart" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto"></div>
+        <h5 class="card-title text-center">Bar Chart - Score</h5>
+      </div>
+      <div class="col-sm">
+        <div id="pieChart" style="width:100%; height:400px;"></div>
+        <h5 class="card-title text-center">Pie Chart - Total user and Active user</h5>
+      </div>
     </div>
-</div>
+  </div>
